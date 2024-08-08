@@ -8,10 +8,10 @@ import Tooltip from '@mui/material/Tooltip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom'; 
 
 // Components
-import Produto from '../Components/Produtos'; // Importando o componente Produto
+import Produto from '../Components/Produtos'; 
 
 const drawerWidth = 240;
 
@@ -93,14 +93,14 @@ export default function MainLayout() {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate(); 
 
   const handleDrawerOpen = () => setOpen(true);
   const handleDrawerClose = () => setOpen(false);
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Remove the token
-    navigate('/'); // Redirect to the home page
+    localStorage.removeItem('token');
+    navigate('/'); 
   };
 
   const renderDrawer = () => (
@@ -146,14 +146,14 @@ export default function MainLayout() {
   return (
     <Box sx={{ display: 'flex' }}>
     <CssBaseline />
-    {!isMobile && renderDrawer()} {/* Render Drawer only on non-mobile screens */}
+    {!isMobile && renderDrawer()} 
     <Box
       component="main"
       sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
     >
       <Produto />
     </Box>
-    {isMobile && renderBottomTabBar()} {/* Render BottomTabBar only on mobile screens */}
+    {isMobile && renderBottomTabBar()} 
   </Box>
   );
 }
