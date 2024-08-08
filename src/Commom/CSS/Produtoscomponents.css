@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'FilsonPro'; 
+    src: url('../Fontes/filsonpro.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'FilsonPro-Bold';
+    src: url('../Fontes/filsonprobold.otf') format('opentype'); 
+  }
+
+
+.row-produtos-div1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.text-row-produtos-div1{
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(37, 37, 37);
+    margin-left: 10px;
+  }
+
+.button-row-produtos-div1{
+    height: 40px;
+    width: 15%;
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(68, 68, 187);
+    color: white;
+    border: transparent;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .button-row-produtos-div1:hover{
+    border: 1px solid rgb(68, 68, 187);
+    background-color: white;
+    color: rgb(68, 68, 187);
+  }
+
+
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal.show {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 95%;
+    text-align: end;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  .forms-div{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .alinhar-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+  .label-main{
+    width: 90%;
+    font-family: 'FilsonPro', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+
+  .input-main{
+    width: 98%;
+    height: 40px;
+    background-color:  rgb(209, 223, 255);
+    color: rgb(51, 51, 51);
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    border-radius: 10px;
+    border: transparent;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+  }
+
+  .button-criar{
+    height: 40px;
+    width: 100%;
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(68, 68, 187);
+    color: white;
+    border: transparent;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .button-criar:hover{
+    border: 1px solid rgb(68, 68, 187);
+    background-color: white;
+    color: rgb(68, 68, 187);
+  }
+
+  .divprincipal-produtos-cards{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-card-produtos{
+    border: 1px solid rgb(68, 68, 187);
+    width: 100%;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .div1-info{
+    width: 45%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .div2-info{
+    width: 45%;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+  }
+
+  .text-infoproduto{
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .subtext-infoproduto{
+    font-family: 'FilsonPro', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .icon-button1,
+  .icon-button2{
+    margin-right: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    border: transparent;
+    cursor: pointer;
+  }
+
+  .icon-button1:hover,
+  .icon-button2:hover{
+    color: rgb(68, 68, 187);
+  }
+
+  .search-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button-pesquisar{
+    height: 40px;
+    width: 10%;
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(68, 68, 187);
+    color: white;
+    border: transparent;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .button-pesquisar:hover{
+    border: 1px solid rgb(68, 68, 187);
+    background-color: white;
+    color: rgb(68, 68, 187);
+  }
+
+  .button-mostrartodos{
+    height: 40px;
+    width: 15%;
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(68, 68, 187);
+    color: white;
+    border: transparent;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .button-mostrartodos:hover{
+    border: 1px solid rgb(68, 68, 187);
+    background-color: white;
+    color: rgb(68, 68, 187);
+  }
+
+  .input-pesquisar{
+    width: 80%;
+    height: 40px;
+    background-color:  rgb(209, 223, 255);
+    color: rgb(51, 51, 51);
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    border-radius: 10px;
+    border: transparent;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .text-row-produtos-div1{
+      font-family: 'FilsonPro-Bold', Arial, sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      color: rgb(37, 37, 37);
+      margin-left: 10px;
+    }
+  
+    .button-row-produtos-div1{
+      height: 40px;
+      width: 30%;
+      font-family: 'FilsonPro-Bold', Arial, sans-serif;
+      border-radius: 10px;
+      background-color: rgb(68, 68, 187);
+      color: white;
+      border: transparent;
+      cursor: pointer;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      font-size: 13px;
+    }
+
+    .button-mostrartodos{
+      height: 40px;
+      width: 20%;
+      font-size: 11px;
+      font-family: 'FilsonPro-Bold', Arial, sans-serif;
+      border-radius: 10px;
+      background-color: rgb(68, 68, 187);
+      color: white;
+      border: transparent;
+      cursor: pointer;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+    
+  .text-infoproduto{
+    font-family: 'FilsonPro-Bold', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+  }
+
+  .subtext-infoproduto{
+    font-family: 'FilsonPro', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .div1-info{
+    width: 75%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .div2-info{
+    width: 25%;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+  }
+
+  }
